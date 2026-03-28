@@ -15,6 +15,12 @@ Create a file called `TemperatureConverter.java`. Write a class with three stati
 - `fahrenheitToCelsius(double f)` — returns double
 - `celsiusToKelvin(double c)` — returns double
 
+**Formulas:**
+- °F = (°C × 9/5) + 32
+- °C = (°F - 32) × 5/9
+- K = °C + 273.15
+
+
 **You must use:**
 - `static` methods
 - `double` return types
