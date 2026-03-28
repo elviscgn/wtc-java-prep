@@ -67,9 +67,8 @@ Fork the repo to get started
 
 ```
 wtc-java-prep/
-├── README.md               ← progress tracker (this file)
-├── CHEATSHEET.md           ← access modifiers, keywords, Python→Java gotchas
-├── exercises/
+├── CHEATSHEET.md
+├── exercises
 │   ├── 01-syntax.md
 │   ├── 02-encapsulation.md
 │   ├── 03-inheritance.md
@@ -81,8 +80,7 @@ wtc-java-prep/
 │   ├── 09-maven.md
 │   ├── 10-git.md
 │   └── 11-theory.md
-└── reference/
-    └── CHEATSHEET.md
+└── README.md (you r here)
 ```
 
 Put your `.java` solution files next to the exercises or in a `src/` folder. Commit after each exercise.
