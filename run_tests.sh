@@ -4,6 +4,7 @@ BUILD_DIR="build"
 SOLUTIONS_DIR="solutions"
 TESTS_DIR="tests"
 
+# havent tested on windows
 if [ ! -f "$JAR" ]; then
     echo "JUnit JAR not found. Run ./setup.sh first."
     exit 1
@@ -46,8 +47,6 @@ if [ $? -ne 0 ]; then exit 1; fi
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-# THE FIX: Instead of hardcoding "wtc.", we use --scan-classpath 
-# and filter by the classname pattern.
 if [ -n "$FILTER" ]; then
     echo "  Running tests matching: $FILTER"
     java -jar "$JAR" --classpath "$BUILD_DIR" --scan-classpath --include-classname ".*${FILTER}.*"
